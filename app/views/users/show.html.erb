@@ -4,7 +4,11 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= @user.name %> <br>
+        <%= @user.email %> <br>
+        <script type="text/javascript">
+            alert("error");
+        </script>
       </h1>
     </section>
     <section class="stats">
