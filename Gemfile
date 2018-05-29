@@ -20,7 +20,19 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-
+#------------------
+# APM GEM
+# scout gem
+gem 'scout_apm'
+#datadog
+gem 'ddtrace'
+#Raygun
+gem 'raygun4ruby'
+#APP Signal
+gem 'appsignal'
+#Sentry
+gem "sentry-raven"
+#-------------------
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails', '4.3.1'
