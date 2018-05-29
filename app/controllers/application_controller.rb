@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   before_action :set_raven_context
 
-  private
   # Confirms a logged-in user.
   def logged_in_user
     unless logged_in?
@@ -12,6 +11,8 @@ class ApplicationController < ActionController::Base
       redirect_to login_url
     end
   end
+
+  private
 
   def set_raven_context
     #Raven.user_context(id: session[:current_user_id]) # or anything else in session

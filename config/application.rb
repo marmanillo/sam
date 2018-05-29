@@ -1,5 +1,5 @@
 require_relative 'boot'
-
+require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -19,4 +19,8 @@ module Sam
     config.action_view.embed_authenticity_token_in_remote_forms = true
 
   end
+end
+
+Raven.configure do |config|
+  config.dsn = 'https://597872d3b4334e02ae7d1f946503c0d4:8bfd82dd9b4f4a9f9f3f9851e646d8c8@sentry.io/1214715'
 end
