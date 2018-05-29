@@ -99,6 +99,8 @@ GEM
     execjs (2.7.0)
     faker (1.8.7)
       i18n (>= 0.7)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
@@ -316,6 +318,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     multi_xml (0.6.0)
+    multipart-post (2.0.0)
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.3.1)
@@ -402,6 +405,8 @@ GEM
     selenium-webdriver (3.11.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    sentry-raven (2.7.3)
+      faraday (>= 0.7.6, < 1.0)
     shellany (0.0.1)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -476,6 +481,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   scout_apm
   selenium-webdriver
+  sentry-raven
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

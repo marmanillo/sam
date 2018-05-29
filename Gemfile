@@ -30,6 +30,8 @@ gem 'ddtrace'
 gem 'raygun4ruby'
 #APP Signal
 gem 'appsignal'
+#Sentry
+gem "sentry-raven"
 #-------------------
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
