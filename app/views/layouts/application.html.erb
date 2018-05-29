@@ -5,6 +5,22 @@
   <%= render 'layouts/rails_default' %>
   <%= render 'layouts/shim' %>
   <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" crossorigin="anonymous"></script>
+  <script>
+      Raven.config('https://388ffa2ec89440d79751566a00b15932@sentry.io/1215595', {
+          logger: 'my-logger',
+          whitelistUrls: [
+              /disqus\.com/,
+              /getsentry\.com/
+          ],
+          ignoreErrors: [
+              'fb_xd_fragment',
+              /ReferenceError:.*/
+          ],
+          includePaths: [
+              /https?:\/\/(www\.)?getsentry\.com/
+          ]
+      }).install();
+  </script>
 </head>
 <body>
 <%= render 'layouts/header' %>
