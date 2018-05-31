@@ -22,5 +22,5 @@ module Sam
 end
 
 Raven.configure do |config|
-  config.dsn = 'https://597872d3b4334e02ae7d1f946503c0d4:8bfd82dd9b4f4a9f9f3f9851e646d8c8@sentry.io/1214715'
+  config.dsn = 'https://51aa2268840a482abcebc2a7545d20b6:54d7d7d99b29418eab984550fddc4308@sentry.io/1215669'
 end
