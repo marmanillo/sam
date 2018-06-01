@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
   def new
     @user = @user = User.new
+    raise "safety_care group missing!"
     #debugger
   end
 
