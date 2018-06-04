@@ -6,25 +6,9 @@
   <%= render 'layouts/shim' %>
   <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" crossorigin="anonymous"></script>
   <script>
-      Raven.config('https://942d89d3fd484465b13979c3c6589081@sentry.io/1216828', {
-          logger: 'my-logger',
-          whitelistUrls: [
-              /disqus\.com/,
-              /getsentry\.com/
-          ],
-          ignoreErrors: [
-              'fb_xd_fragment',
-              /ReferenceError:.*/
-          ],
-          includePaths: [
-              /https?:\/\/(www\.)?getsentry\.com/
-          ]
-      }).install();
+      Raven.config('https://942d89d3fd484465b13979c3c6589081@sentry.io/1216828').install();
   </script>
-  <script type="text/javascript">
-      var num = 1;
-      num.toPrecision(500);
-  </script>
+
 </head>
 <body>
 <%= render 'layouts/header' %>
